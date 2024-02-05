@@ -1,0 +1,60 @@
+{
+    "formatVersion": "1.0",
+    "tagData": {
+        "name": "Switch+10",
+        "icon": "./res/x2/default_icon.png",
+        "description": "Same as the Random Switch block, but with 10 output connectors.",
+        "functions": [
+            {
+                "id": "function_0",
+                "name": "Random",
+                "connector": {
+                    "inputs": [
+                        {
+                            "label": "Input"
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "label": "Out1"
+                        },
+                        {
+                            "label": "Out2"
+                        },
+                        {
+                            "label": "Out3"
+                        },
+                        {
+                            "label": "Out4"
+                        },
+                        {
+                            "label": "Out5"
+                        },
+                        {
+                            "label": "Out6"
+                        },
+                        {
+                            "label": "Out7"
+                        },
+                        {
+                            "label": "Out8"
+                        },
+                        {
+                            "label": "Out9"
+                        },
+                        {
+                            "label": "Out10"
+                        }
+                    ]
+                },
+                "properties": [],
+                "extension": {
+                    "initialize": "/*** No Initialize Codes ***/",
+                    "receive": "/*** No Receive Codes ***/",
+                    "execute": "/*** No Execute Codes ***/",
+                    "result": "//Select an output connector randomly\nvar outputIndex = Math.floor( Math.random() * 10);\n  \nreturn {\n    indexes : [ outputIndex ],\n    resultType : \"continue\"\n}"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "formatVersion": "1.0",
+    "tagData": {
+        "name": "Connector Node",
+        "icon": "./res/x2/default_icon.png",
+        "description": "Passes the input to the output. Serves as a connector node for wire management.",
+        "functions": [
+            {
+                "id": "function_0",
+                "name": "Wire",
+                "connector": {
+                    "inputs": [
+                        {
+                            "label": "in"
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "label": "out"
+                        }
+                    ]
+                },
+                "properties": [],
+                "extension": {
+                    "initialize": "",
+                    "receive": "",
+                    "execute": "",
+                    "result": "return {\n    indexes : [0],   //Output from the first connector \n    resultType : \"continue\"\n}\n"
+                }
+            }
+        ]
+    }
+}
